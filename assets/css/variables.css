@@ -1,0 +1,92 @@
+/* ============================================
+   DESIGN TOKENS / CSS VARIABLES
+   ============================================
+   All design values centralized for easy theming
+   and future Arabic/RTL support
+   ============================================ */
+
+:root {
+  /* ========== Colors ========== */
+  /* Primary Colors */
+  --color-primary: #083239;
+  --color-primary-dark: #0b1f22;
+  --color-primary-darker: #0a2c30;
+  --color-primary-light: #113a3e;
+  
+  /* Accent Colors */
+  --color-accent: #c4ad8d;
+  --color-accent-dark: #0a2c30;
+  
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-soft-white: rgba(255, 255, 255, 0.86);
+  --color-muted: rgba(255, 255, 255, 0.72);
+  --color-text-primary: rgba(0, 0, 0, 0.75);
+  --color-text-primary-hover: rgba(0, 0, 0, 0.92);
+  
+  /* Background Colors */
+  --bg-hero: var(--color-primary);
+  --bg-header-cta: var(--color-primary-light);
+  --bg-hero-cta: var(--color-accent);
+  
+  /* ========== Typography ========== */
+  --font-primary: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-heading: 'Forum', Georgia, serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  
+  /* Font Sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-base: 14px;
+  --font-size-lg: 16px;
+  --font-size-hero-title: clamp(30px, 2.5vw, 46px);
+  
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  
+  /* Line Heights */
+  --line-height-tight: 1.05;
+  --line-height-normal: 1.55;
+  
+  /* Letter Spacing */
+  --letter-spacing-wide: 0.14em;
+  
+  /* ========== Spacing ========== */
+  --spacing-xs: 6px;
+  --spacing-sm: 12px;
+  --spacing-md: 18px;
+  --spacing-lg: 22px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 44px;
+  --spacing-3xl: 56px;
+  --spacing-4xl: 60px;
+  --spacing-5xl: 80px;
+  --spacing-6xl: 110px;
+  
+  /* ========== Layout ========== */
+  --container-max-width: 1440px;
+  --container-padding: 120px;
+  --container-padding-mobile: 32px;
+  
+  /* ========== Border Radius ========== */
+  --radius-sm: 10px;
+  --radius-md: 12px;
+  --radius-lg: 34px;
+  --radius-xl: 56px;
+  
+  /* ========== Shadows ========== */
+  --shadow-sm: 0 8px 18px rgba(0, 0, 0, 0.10);
+  --shadow-md: 0 10px 18px rgba(0, 0, 0, 0.18);
+  
+  /* ========== Transitions ========== */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+}
+
+/* ========== RTL Support ========== */
+/* RTL-specific overrides can be added here if needed */
+/* Most styles use logical properties and will work automatically */
+/* Example: [dir="rtl"] { --spacing-direction: -1; } */
+

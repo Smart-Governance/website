@@ -1,0 +1,49 @@
+<header class="sg-header" id="header">
+  <div class="sg-container">
+    <a class="sg-brand" href="{{HOME_URL}}" aria-label="Smart Governance home">
+      <img
+        class="sg-brand__logo"
+        src="/assets/img/Logo Dark.png"
+        alt="Smart Governance"
+        decoding="async"
+        loading="eager"
+      />
+    </a>
+
+    <nav class="sg-nav" aria-label="Primary navigation">
+      <a class="sg-nav__link" href="{{HOME_URL}}">{{HOME_LABEL}}</a>
+      <a class="sg-nav__link" href="{{ABOUT_URL}}">{{ABOUT_LABEL}}</a>
+      <a class="sg-nav__link" href="{{SERVICES_URL}}">{{SERVICES_LABEL}}</a>
+      <a class="sg-nav__link" href="{{CONTACT_URL}}">{{CONTACT_LABEL}}</a>
+      <a class="sg-nav__link sg-lang-switch" href="{{LANG_SWITCH_URL}}">{{LANG_SWITCH_LABEL}}</a>
+    </nav>
+
+    <div class="sg-header-cta-slot">
+      <a class="appointment-btn" id="sg-appointment-cta" href="{{CTA_URL}}">
+        <span class="btn-text">{{CTA_LABEL}}</span>
+        <span class="arrow-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
+      </a>
+    </div>
+
+    <button class="sg-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span class="sg-hamburger__line"></span>
+      <span class="sg-hamburger__line"></span>
+      <span class="sg-hamburger__line"></span>
+    </button>
+
+    <div class="sg-mobile-nav-overlay"></div>
+    <nav class="sg-mobile-nav" aria-label="Mobile navigation">
+      <a class="sg-mobile-nav__link" href="{{HOME_URL}}">{{HOME_LABEL}}</a>
+      <a class="sg-mobile-nav__link" href="{{ABOUT_URL}}">{{ABOUT_LABEL}}</a>
+      <a class="sg-mobile-nav__link" href="{{SERVICES_URL}}">{{SERVICES_LABEL}}</a>
+      <a class="sg-mobile-nav__link" href="{{CONTACT_URL}}">{{CONTACT_LABEL}}</a>
+      <a class="sg-mobile-nav__link sg-lang-switch" href="{{LANG_SWITCH_URL}}">{{LANG_SWITCH_LABEL}}</a>
+      <div class="sg-mobile-cta-slot"></div>
+    </nav>
+  </div>
+</header>

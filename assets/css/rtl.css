@@ -1,0 +1,338 @@
+/* ============================================
+   RTL OVERRIDES
+   ============================================ */
+
+[dir="rtl"] .sg-nav__link::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] {
+  --font-primary: "Montserrat Arabic", sans-serif;
+  --font-heading: "Doran", "Montserrat Arabic", sans-serif;
+  --font-jakarta: "Montserrat Arabic", sans-serif;
+}
+
+[dir="rtl"] .sg-shell,
+[dir="rtl"] body {
+  font-family: var(--font-primary);
+}
+
+[dir="rtl"] .sg-shell * {
+  font-family: var(--font-primary);
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] .sg-hero-title,
+[dir="rtl"] .sg-services__title,
+[dir="rtl"] .sg-services-card__title,
+[dir="rtl"] .sg-explore-services__title,
+[dir="rtl"] .sg-time-hero__heading h1,
+[dir="rtl"] .sg-about-strategy__title h2,
+[dir="rtl"] .sg-solution__hero h2,
+[dir="rtl"] .sg-mosaic__card--hero h3,
+[dir="rtl"] .sg-mosaic__chart-percent,
+[dir="rtl"] .sg-clients__title-wrap h2,
+[dir="rtl"] .sg-clients__summary-card .sg-clients__big-number,
+[dir="rtl"] .sg-testimonial__stat-value,
+[dir="rtl"] .sg-testimonial__footer-title,
+[dir="rtl"] .testimonials-hero__title,
+[dir="rtl"] .testimonials-grid__title,
+[dir="rtl"] .sg-blog__title,
+[dir="rtl"] .contact-title,
+[dir="rtl"] .sg-explore-template__title,
+[dir="rtl"] .sg-explore-template__block h2,
+[dir="rtl"] .sg-explore-template__cta-card h3,
+[dir="rtl"] .sg-service-hero__title,
+[dir="rtl"] .sg-service-split__title,
+[dir="rtl"] .sg-service-offers__headline,
+[dir="rtl"] .sg-service-offer__cta-copy h3 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+[dir="rtl"] .sg-hero-title {
+  line-height: 1.15;
+  color: #ffffff;
+}
+
+[dir="rtl"] .sg-time-hero__heading h1 {
+  font-size: clamp(32px, 5vw, 44px);
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] .sg-hero-title,
+[dir="rtl"] .sg-services__title,
+[dir="rtl"] .sg-services-card__title,
+[dir="rtl"] .sg-explore-services__title,
+[dir="rtl"] .sg-time-hero__heading h1,
+[dir="rtl"] .sg-about-strategy__title h2,
+[dir="rtl"] .sg-solution__hero h2,
+[dir="rtl"] .sg-mosaic__card--hero h3,
+[dir="rtl"] .sg-mosaic__chart-percent,
+[dir="rtl"] .sg-clients__title-wrap h2,
+[dir="rtl"] .sg-clients__summary-card .sg-clients__big-number,
+[dir="rtl"] .sg-testimonial__stat-value,
+[dir="rtl"] .sg-testimonial__footer-title,
+[dir="rtl"] .testimonials-hero__title,
+[dir="rtl"] .testimonials-grid__title,
+[dir="rtl"] .sg-blog__title,
+[dir="rtl"] .contact-title,
+[dir="rtl"] .sg-service-hero__title,
+[dir="rtl"] .sg-service-split__title,
+[dir="rtl"] .sg-service-offers__headline,
+[dir="rtl"] .sg-service-offer__cta-copy h3 {
+  line-height: 1.7;
+}
+
+[dir="rtl"] h1 *,
+[dir="rtl"] h2 *,
+[dir="rtl"] h3 *,
+[dir="rtl"] h4 *,
+[dir="rtl"] h5 *,
+[dir="rtl"] h6 *,
+[dir="rtl"] .sg-hero-title *,
+[dir="rtl"] .sg-services__title *,
+[dir="rtl"] .sg-explore-services__title *,
+[dir="rtl"] .sg-time-hero__heading h1 *,
+[dir="rtl"] .sg-about-strategy__title h2 *,
+[dir="rtl"] .sg-solution__hero h2 *,
+[dir="rtl"] .sg-mosaic__card--hero h3 *,
+[dir="rtl"] .sg-mosaic__chart-percent *,
+[dir="rtl"] .sg-clients__title-wrap h2 *,
+[dir="rtl"] .sg-clients__summary-card .sg-clients__big-number *,
+[dir="rtl"] .sg-testimonial__stat-value *,
+[dir="rtl"] .sg-testimonial__footer-title *,
+[dir="rtl"] .testimonials-hero__title *,
+[dir="rtl"] .testimonials-grid__title *,
+[dir="rtl"] .sg-blog__title *,
+[dir="rtl"] .contact-title *,
+[dir="rtl"] .sg-service-hero__title *,
+[dir="rtl"] .sg-service-split__title *,
+[dir="rtl"] .sg-service-offers__headline *,
+[dir="rtl"] .sg-service-offer__cta-copy h3 * {
+  font-family: var(--font-heading);
+}
+
+[dir="rtl"] .sg-blog__card-title,
+[dir="rtl"] .sg-blog__card-title * {
+  font-family: var(--font-primary);
+  font-weight: 600;
+}
+
+[dir="rtl"] .sg-clients__value,
+[dir="rtl"] .sg-clients__body h5,
+[dir="rtl"] .sg-clients__body p {
+  font-family: var(--font-primary);
+}
+
+[dir="rtl"] .arrow-icon {
+  margin-left: 0;
+  margin-right: 0;
+  margin-inline-start: 14px;
+}
+
+[dir="rtl"] .sg-arrow svg {
+  transform: scaleX(-1) translateY(1px);
+}
+
+[dir="rtl"] .arrow-icon svg {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .sg-btn-type1 .sg-arrow svg {
+  transform: scaleX(-1) translateY(2px);
+}
+
+[dir="rtl"] .sg-btn-type1:hover .sg-arrow svg {
+  transform: scaleX(-1) translateY(2px);
+}
+
+[dir="rtl"] .appointment-btn:hover .arrow-icon,
+[dir="rtl"] .sg-btn-type2:hover .arrow-icon,
+[dir="rtl"] .sg-btn-type2-services:hover .arrow-icon {
+  transform: rotate(45deg);
+}
+
+[dir="rtl"] .sg-explore-services__service-row:hover {
+  transform: translateX(-4px);
+}
+
+[dir="rtl"] .sg-explore-services__service-row:hover .sg-explore-services__service-arrow {
+  transform: scaleX(-1) translateX(3px);
+}
+
+[dir="rtl"] .sg-explore-services__service-arrow {
+  display: inline-flex;
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .sg-explore-services__tab.active {
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  margin-inline-start: 0;
+  margin-inline-end: calc(-1 * var(--spacing-md));
+}
+
+[dir="rtl"] .sg-explore-services__panel {
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+}
+
+[dir="rtl"] .sg-blog__heading,
+[dir="rtl"] .sg-blog__title,
+[dir="rtl"] .sg-blog__right,
+[dir="rtl"] .sg-blog__right p {
+  text-align: start;
+}
+
+[dir="rtl"] .sg-blog__title {
+  font-size: clamp(32px, 5vw, 44px);
+}
+
+[dir="rtl"] .sg-clients__title-wrap h2 {
+  font-size: 40px;
+}
+
+[dir="rtl"] .sg-clients__break {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .sg-clients__break {
+    display: block;
+    height: 0;
+    line-height: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .sg-clients__title-wrap {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  [dir="rtl"] .sg-clients__title-wrap h2 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .sg-mosaic__card--hero p {
+    margin-bottom: 28px;
+  }
+}
+
+[dir="rtl"] .sg-about-strategy__title h2 {
+  font-size: 40px;
+}
+
+[dir="rtl"] .sg-service-hero__summary,
+[dir="rtl"] .sg-service-split__text,
+[dir="rtl"] .sg-service-offers__intro {
+  text-align: start;
+}
+
+[dir="rtl"] .sg-testimonial__nav button span {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .sg-solution__hero img {
+  transform: scaleX(-1);
+  transform-origin: center;
+}
+
+[dir="rtl"] .sg-trusted__slider-wrapper {
+  direction: ltr;
+}
+
+[dir="rtl"] .sg-trusted__slider {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .sg-hero-cta:hover .sg-arrow svg,
+[dir="rtl"] .sg-services-card__button:hover .sg-arrow svg,
+[dir="rtl"] .sg-time-hero__cta:hover .sg-arrow svg,
+[dir="rtl"] .sg-about-strategy__float-cta:hover .sg-arrow svg,
+[dir="rtl"] .sg-mosaic__cta:hover .sg-arrow svg,
+[dir="rtl"] .sg-clients__image-cta:hover .sg-arrow svg,
+[dir="rtl"] .sg-blog__read:hover .sg-arrow svg,
+[dir="rtl"] .sg-blog__view-all:hover .sg-arrow svg,
+[dir="rtl"] .sg-testimonial__footer-cta:hover .sg-arrow svg {
+  transform: scaleX(-1) translate(3px, 1px);
+}
+
+[dir="rtl"] .sg-nav__link,
+[dir="rtl"] .sg-mobile-nav__link,
+[dir="rtl"] .sg-explore-services__tab-mark,
+[dir="rtl"] .sg-time-hero__tag,
+[dir="rtl"] .appointment-btn,
+[dir="rtl"] .sg-btn-type2,
+[dir="rtl"] .sg-btn-type2-services,
+[dir="rtl"] .sg-services-card__button,
+[dir="rtl"] .sg-blog__read,
+[dir="rtl"] .sg-blog__view-all {
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+[dir="rtl"] .sg-hero-title {
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .sg-about-strategy__header span.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+}
+[dir="rtl"] .sg-philosophy__values {
+  text-align: center;
+}
+
+[dir="rtl"] .sg-philosophy__grid {
+  grid-template-areas: "values vision mission";
+  grid-template-columns: 0.9fr 1fr 0.91fr;
+}
+
+[dir="rtl"] .sg-philosophy__item:nth-child(1) {
+  grid-area: mission;
+}
+
+[dir="rtl"] .sg-philosophy__item:nth-child(2) {
+  grid-area: vision;
+}
+
+[dir="rtl"] .sg-philosophy__item:nth-child(3) {
+  grid-area: values;
+}
+
+[dir="rtl"] .sg-philosophy__item:nth-child(2) p {
+  max-width: 34ch;
+  margin-inline: auto;
+}
+
+
+[dir="rtl"] .sg-philosophy__item:nth-child(1) p {
+  max-width: 77%;
+  margin-inline: auto;
+}

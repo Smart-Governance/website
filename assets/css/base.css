@@ -1,0 +1,95 @@
+/* ============================================
+   BASE STYLES
+   ============================================
+   Global styles, typography, and common elements
+   ============================================ */
+
+/* ========== Root Styles ========== */
+.sg-shell {
+  background: var(--color-white);
+  color: var(--color-primary-dark);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+}
+
+/* ========== Container ========== */
+.sg-container {
+  width: min(var(--container-max-width), calc(100% - var(--container-padding)));
+  margin-inline: auto;
+}
+
+@media (max-width: 560px) {
+  .sg-container {
+    width: min(560px, calc(100% - var(--container-padding-mobile)));
+  }
+}
+
+/* ========== Typography ========== */
+.sg-hero-title {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-hero-title);
+  line-height: var(--line-height-tight);
+  color: var(--color-soft-white);
+}
+
+.sg-accent {
+  color: var(--color-accent);
+}
+
+/* ========== Buttons & CTAs ========== */
+.sg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  transition: filter var(--transition-fast);
+  cursor: pointer;
+}
+
+.sg-btn:hover {
+  filter: brightness(1.04);
+}
+
+.sg-btn--primary {
+  background: var(--bg-hero-cta);
+  color: var(--color-accent-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.sg-btn--secondary {
+  background: var(--bg-header-cta);
+  color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.sg-arrow {
+  font-size: var(--font-size-lg);
+  transform: translateY(-1px);
+  transition: transform var(--transition-fast);
+}
+
+.sg-btn:hover .sg-arrow {
+  transform: translateX(2px) translateY(-1px);
+}
+
+[dir="rtl"] .sg-btn:hover .sg-arrow {
+  transform: translateX(-2px) translateY(-1px);
+}
+
+/* ========== Links ========== */
+.sg-link {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.sg-link:hover {
+  color: var(--color-text-primary-hover);
+}
+
